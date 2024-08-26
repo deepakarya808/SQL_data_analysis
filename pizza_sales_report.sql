@@ -42,7 +42,7 @@ FROM pizza_sales
 GROUP BY pizza_category
 
 
---- Percentage of sales by Pizza 
+--- Percentage of sales by Pizza size
 
 
 SELECT pizza_size, CAST(SUM(total_price) AS DECIMAL(10,2)) as total_revenue,
